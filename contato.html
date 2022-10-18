@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<html lang="PT-BR">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Prática 2 - Contato</title>
+	<link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+	<header>
+		<table>
+			<tr>
+				<td rowspan="2"><img src="img/face2.jpg" width="90px" style="border-radius: 100%;" alt="Foto"> </td>
+				<td style="font-size: 40px; font-weight: bold;"> Mucio Efigênio Duarte Coelho Neto</td>
+			</tr>
+			<tr>
+				<td style="letter-spacing: 4px; font-family: Courier New; font-size: 20px;">&lt;Designer e Desenvolvedor
+					Web&gt;</td>
+			</tr>
+		</table>
+	</header>
+
+	<main id=fundo>
+		<!--TABELA COM MENU-->
+		<table class="menu">
+			<thead class="menu">
+				<tr>
+					<td colspan="2">
+						<ul>
+							<li><a href="index.html" class="linkMenu">Principal</a></li>
+							<li><a href="quemsou.html" class="linkMenu">Quem Sou</a></li>
+							<li><a href="projetos.html" class="linkMenu">Projetos</a></li>
+							<li><a href="contato.html" id="selecionado" class="linkMenu">Contato</a></li>
+						</ul>
+					</td>
+				</tr>
+			</thead>
+
+			<!--TABELA COM INTRODUÇÃO AOS CONTATOS-->
+
+			<table id="IntContato">
+				<tr>
+					<td>
+						<h1 style="margin-bottom: 1px">Entre em contato !</h1>
+						<p style="margin-top: 1px">Preencha todos os campos do formulário a seguir e em até 48h lhe
+							responderei. <br>Será um prazer lhe atender!
+						</p>
+					</td>
+				</tr>
+			</table>
+
+			<!--FORMULÁRIO COM TABELA-->
+
+			<form action="" method="POST">
+				<table class="contatos" style="border-spacing: 10px;">
+					<tr>
+						<td>
+							<label for="slctAssunto">Assunto</label><br>
+							<select name="assunto" id="slctAssunto" title="Selecione o assunto" required>
+								<option>Selecione o assunto</option>
+								<option value="1">Assunto 1</option>
+								<option value="2">Assunto 2</option>
+								<option value="3">Assunto 3</option>
+								<option value="4">Assunto 4</option>
+								<option value="5">Assunto 5</option>
+							</select>
+						</td>
+
+					</tr>
+					<tr>
+						<td>
+							<label for="txtNome">Nome</label><br>
+							<input type="text" name="Nome" id="txtNome" placeholder="Digite seu nome" required
+								title="Digite seu nome">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label for="txtEmail">E-mail</label><br>
+							<input type="text" name="Email" id="txtEmail" placeholder="Digite seu e-email" required
+								pattern="[^@\s]+@[^@\s]+\.[^@\s]+" title="Digite seu email">
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<label for="txtTelefone">E-mail</label><br>
+							<input type="text" name="Telefone" id="txtTelefone" placeholder="(99)99999-9999" required
+								pattern="[^@\s]+@[^@\s]+\.[^@\s]+"
+								title="Digite seu telefone no formato (99)99999-9999">
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<label for="txtMensagem">Mensagem</label><br>
+							<textarea name="Mensagem" id="txtMensagem" cols="30" rows="10"
+								title="Digite uma mensagem"></textarea>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<input class="botaoEnviar" type="submit" value="Enviar">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<hr>
+							<h3>Outras formas de contato:</h3>
+							<ul class="OutrasFormasContato">
+								<li>Residente em Alegre - ES</li>
+								<li><a href="mailto:muciocoelho@gmail.com">muciocoelho@gmail.com</a></li>
+								<li>(21)9999-9999</li>
+								<li><a href="https://www.linkedin.com/in/mucio-c-98738810a/">Linkedin</a></li>
+							</ul>
+						</td>
+					</tr>
+
+				</table>
+			</form>
+
+	</main>
+
+	<footer>
+		<p>Copyright &#169 2022<br>
+			<img src="img/ifes.png" width="70px" alt="ifes">
+		</p>
+	</footer>
+</body>
+
+</html>
